@@ -1,6 +1,6 @@
-# NextFlow Backend
+# weave Backend
 
-NextFlow is a FastAPI backend for an n8n-style workflow engine. A workflow is a JSON graph: **nodes** perform work and **edges** describe the allowed route between them. The graph is stored in SQLite and interpreted at execution time, so a workflow can be created or changed without changing Python code.
+weave is a FastAPI backend for an n8n-style workflow engine. A workflow is a JSON graph: **nodes** perform work and **edges** describe the allowed route between them. The graph is stored in SQLite and interpreted at execution time, so a workflow can be created or changed without changing Python code.
 
 > This is an MVP workflow interpreter. It supports sequential workflows, shared execution context, template interpolation, retries/timeouts, and `true`/`false` conditional routing. It is not yet a full parallel DAG scheduler or a background-job platform.
 
@@ -59,7 +59,7 @@ Run the included branch test:
 
 | Variable | Default | Use |
 | --- | --- | --- |
-| `DATABASE_PATH` | `nextflow.db` | SQLite database file path. |
+| `DATABASE_PATH` | `weave.db` | SQLite database file path. |
 | `GROQ_API_KEY` | empty | Enables real Groq LLM calls. Without it, the LLM node returns a mock result. |
 | `GROQ_MODEL` | `llama-3.3-70b-versatile` | Default Groq model. |
 | `SMTP_HOST` | empty | SMTP server host for the email node. |
